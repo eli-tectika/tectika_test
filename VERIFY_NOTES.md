@@ -1,0 +1,1 @@
+Pacman is a classic arcade game where the player navigates a maze, eating pellets while avoiding ghosts.
