@@ -1,1 +1,1 @@
-Pacman is a classic arcade game where the player navigates a maze, eating pellets while avoiding ghosts. The objective is to clear the maze by eating all the pellets without being caught by the enemies.
+Pacman is a classic arcade game where the player navigates a maze, eating pellets while avoiding ghosts. The objective is to clear the maze by eating all the pellets without being caught by the enemies.\n\nA new helper method has been added: `PrintWelcomeMessage()` in the `Utils` class to display a welcome message when the game starts.

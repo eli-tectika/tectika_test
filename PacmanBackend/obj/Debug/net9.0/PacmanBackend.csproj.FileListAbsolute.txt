@@ -1,0 +1,15 @@
+/workspace/PacmanBackend/obj/Debug/net9.0/PacmanBackend.GeneratedMSBuildEditorConfig.editorconfig
+/workspace/PacmanBackend/obj/Debug/net9.0/PacmanBackend.AssemblyInfoInputs.cache
+/workspace/PacmanBackend/obj/Debug/net9.0/PacmanBackend.AssemblyInfo.cs
+/workspace/PacmanBackend/obj/Debug/net9.0/PacmanBackend.csproj.CoreCompileInputs.cache
+/workspace/PacmanBackend/obj/Debug/net9.0/PacmanBackend.sourcelink.json
+/workspace/PacmanBackend/bin/Debug/net9.0/PacmanBackend
+/workspace/PacmanBackend/bin/Debug/net9.0/PacmanBackend.deps.json
+/workspace/PacmanBackend/bin/Debug/net9.0/PacmanBackend.runtimeconfig.json
+/workspace/PacmanBackend/bin/Debug/net9.0/PacmanBackend.dll
+/workspace/PacmanBackend/bin/Debug/net9.0/PacmanBackend.pdb
+/workspace/PacmanBackend/obj/Debug/net9.0/PacmanBackend.dll
+/workspace/PacmanBackend/obj/Debug/net9.0/refint/PacmanBackend.dll
+/workspace/PacmanBackend/obj/Debug/net9.0/PacmanBackend.pdb
+/workspace/PacmanBackend/obj/Debug/net9.0/PacmanBackend.genruntimeconfig.cache
+/workspace/PacmanBackend/obj/Debug/net9.0/ref/PacmanBackend.dll

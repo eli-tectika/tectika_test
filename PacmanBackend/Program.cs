@@ -1,2 +1,3 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+// Display a welcome message before starting the game
+PacmanBackend.Utils.PrintWelcomeMessage();
