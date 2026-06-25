@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pacman — Welcome</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <h1 class="title" aria-label="Pacman">PACMAN</h1>
+    <p class="subtitle">Classic arcade — modern web</p>
+  </header>
+
+  <main id="app" class="container" role="main">
+    <!-- Welcome Screen -->
+    <section id="screen-welcome" class="screen" aria-labelledby="welcome-heading">
+      <h2 id="welcome-heading" class="sr-only">Welcome</h2>
+      <div class="menu">
+        <button class="btn primary" id="btn-start" data-action="start">Start Game</button>
+        <button class="btn" data-action="options">Options</button>
+        <button class="btn" data-action="highscores">High Scores</button>
+        <button class="btn" data-action="credits">Credits</button>
+      </div>
+    </section>
+
+    <!-- Options Screen -->
+    <section id="screen-options" class="screen hidden" aria-labelledby="options-heading">
+      <h2 id="options-heading">Options</h2>
+      <form id="options-form" class="form" autocomplete="off" novalidate>
+        <div class="form-row">
+          <label for="opt-difficulty">Difficulty</label>
+          <select id="opt-difficulty" name="difficulty">
+            <option value="easy">Easy</option>
+            <option value="normal">Normal</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="opt-sound">Sound volume</label>
+          <input id="opt-sound" type="range" min="0" max="100" step="1" value="70" aria-valuemin="0" aria-valuemax="100" />
+        </div>
+        <div class="form-row">
+          <label for="opt-theme">Theme</label>
+          <select id="opt-theme" name="theme">
+            <option value="classic">Classic</option>
+            <option value="neon">Neon</option>
+            <option value="dark">Dark</option>
+          </select>
+        </div>
+        <fieldset class="form-row">
+          <legend>Controls</legend>
+          <div class="grid-2">
+            <label for="ctrl-up">Up</label>
+            <input id="ctrl-up" name="ctrl-up" type="text" inputmode="none" value="ArrowUp" aria-describedby="controls-help" />
+            <label for="ctrl-down">Down</label>
+            <input id="ctrl-down" name="ctrl-down" type="text" inputmode="none" value="ArrowDown" aria-describedby="controls-help" />
+            <label for="ctrl-left">Left</label>
+            <input id="ctrl-left" name="ctrl-left" type="text" inputmode="none" value="ArrowLeft" aria-describedby="controls-help" />
+            <label for="ctrl-right">Right</label>
+            <input id="ctrl-right" name="ctrl-right" type="text" inputmode="none" value="ArrowRight" aria-describedby="controls-help" />
+          </div>
+          <p id="controls-help" class="help">Click a field, then press the desired key. Only non-modifier keys are accepted.</p>
+        </fieldset>
+        <div class="actions">
+          <button type="button" class="btn" data-action="back">Back</button>
+          <button type="submit" class="btn primary">Save</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- High Scores Screen -->
+    <section id="screen-highscores" class="screen hidden" aria-labelledby="highscores-heading">
+      <h2 id="highscores-heading">High Scores</h2>
+      <div id="highscores-list" class="highscores" role="table" aria-label="High scores table">
+        <div class="row header" role="row">
+          <div class="cell" role="columnheader">Rank</div>
+          <div class="cell" role="columnheader">Player</div>
+          <div class="cell" role="columnheader">Score</div>
+          <div class="cell" role="columnheader">Date</div>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn" data-action="back">Back</button>
+        <button class="btn danger" data-action="clear-scores">Clear Local Scores</button>
+      </div>
+    </section>
+
+    <!-- Credits Screen -->
+    <section id="screen-credits" class="screen hidden" aria-labelledby="credits-heading">
+      <h2 id="credits-heading">Credits</h2>
+      <ul class="credits">
+        <li>Game concept: Namco (1980)</li>
+        <li>Implementation: Pacman Web Team</li>
+        <li>Design: Retro & modern hybrid</li>
+      </ul>
+      <div class="actions">
+        <button class="btn" data-action="back">Back</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <button id="btn-theme-toggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle dark mode">🌓</button>
+    <span class="version" id="app-version" aria-label="Version">v0.1.0</span>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
