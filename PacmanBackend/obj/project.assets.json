@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspace/PacmanBackend/PacmanBackend.csproj",
+      "projectUniqueName": "/workspace/runs/08dfce8e/PacmanBackend/PacmanBackend.csproj",
       "projectName": "PacmanBackend",
-      "projectPath": "/workspace/PacmanBackend/PacmanBackend.csproj",
+      "projectPath": "/workspace/runs/08dfce8e/PacmanBackend/PacmanBackend.csproj",
       "packagesPath": "/root/.nuget/packages/",
-      "outputPath": "/workspace/PacmanBackend/obj/",
+      "outputPath": "/workspace/runs/08dfce8e/PacmanBackend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/root/.nuget/NuGet/NuGet.Config"
