@@ -1,0 +1,13 @@
+# .NET build artifacts
+bin/
+obj/
+
+# Project-specific
+PacmanBackend/bin/
+PacmanBackend/obj/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.user
+*.swp
