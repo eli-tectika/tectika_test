@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacman</title>
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="title-screen">
+      <h1>Pacman</h1>
+    </header>
+
+    <main>
+      <section id="view-menu" class="view" data-view="menu" aria-label="Main Menu">
+        <ul class="menu" role="menu">
+          <li><button role="menuitem" class="menu-item" data-action="start">Start Game</button></li>
+          <li><button role="menuitem" class="menu-item" data-action="options">Options</button></li>
+          <li><button role="menuitem" class="menu-item" data-action="highscores">High Scores</button></li>
+          <li><button role="menuitem" class="menu-item" data-action="help">Help / About</button></li>
+          <li><button role="menuitem" class="menu-item" data-action="exit">Exit / Back</button></li>
+        </ul>
+        <p class="hint">Use ↑/↓ and Enter or click to navigate</p>
+      </section>
+
+      <section id="view-options" class="view hidden" data-view="options" aria-label="Options">
+        <h2>Options</h2>
+        <form id="options-form">
+          <label>
+            <input type="checkbox" id="opt-sound" />
+            Sound Enabled
+          </label>
+          <label>
+            Difficulty
+            <select id="opt-difficulty">
+              <option value="Easy">Easy</option>
+              <option value="Normal" selected>Normal</option>
+              <option value="Hard">Hard</option>
+            </select>
+          </label>
+          <div class="actions">
+            <button type="submit" id="btn-save-options">Save</button>
+            <button type="button" id="btn-back-options">Back</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="view-highscores" class="view hidden" data-view="highscores" aria-label="High Scores">
+        <h2>High Scores</h2>
+        <ol id="scores-list" class="scores"></ol>
+        <div class="actions">
+          <button type="button" class="back-button">Back</button>
+        </div>
+      </section>
+
+      <section id="view-help" class="view hidden" data-view="help" aria-label="Help and About">
+        <h2>Help / About</h2>
+        <p>Welcome to Pacman! Use arrow keys to navigate the menu. This is a UI stub; game logic will be integrated later.</p>
+        <div class="actions">
+          <button type="button" class="back-button">Back</button>
+        </div>
+      </section>
+
+      <section id="view-game" class="view hidden" data-view="game" aria-label="Game">
+        <h2>Game</h2>
+        <p id="game-status">Game starting... (placeholder)</p>
+        <div class="actions">
+          <button type="button" class="back-button">Back to Menu</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
